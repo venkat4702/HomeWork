@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Student",
+		"_postman_id": "999830b4-4a21-191e-f6ef-9dd95b95858d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/students/delete/105",
+			"request": {
+				"url": "http://localhost:8080/students/delete/105",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/students/create",
+			"request": {
+				"url": "http://localhost:8080/students/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"studentId\":105,\n\"firstName\":\"Venkat\",\n\"lastName\":\"Badam\",\n\"dateOfBirth\":\"1974-09-07\",\n\"grade\":\"11\",\n\"gender\":\"Male\",\n\"createddate\":\"2018-04-10\",\n\"lastModifiedDate\":\"2018-04-10\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/students/profiles/101",
+			"request": {
+				"url": "http://localhost:8080/students/profiles/101",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

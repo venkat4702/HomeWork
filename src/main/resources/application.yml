@@ -1,0 +1,14 @@
+spring.data.cassandra.keyspace-name: student_data
+spring:
+  data:
+    cassandra:
+      contact-points: 127.0.0.1
+
+spring.data.cassandra.port: 9042
+spring.data.cassandra.data-center: LEG1
+
+#okta.oauth2.issuer=https://dev-759619.oktapreview.com/oauth2/default
+#okta.oauth2.clientId={yourClientId}
+#okta.oauth2.clientSecret={yourClientSecret}
+## Configure the callback URL to match the previous section
+#security.oauth2.sso.loginPath=/authorization-code/callback

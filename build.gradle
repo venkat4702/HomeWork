@@ -1,0 +1,35 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.homework'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.springframework.boot:spring-boot-starter-data-cassandra') //Spring Data Cassandra
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('com.okta.spring:okta-spring-boot-starter:0.2.0') // okta security
+	runtime('org.springframework.boot:spring-boot-devtools')
+//	compile('org.springframework.data:spring-data-cassandra:2.0.5.RELEASE') //Spring Data Cassandra
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
